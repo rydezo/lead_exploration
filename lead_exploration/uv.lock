@@ -1,0 +1,23 @@
+version = 1
+revision = 3
+requires-python = ">=3.13"
+
+[[package]]
+name = "bakery"
+version = "1.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/cb/c5/05ee26a56a007eb475927a90bd94de75526057e96aef242448870a335b66/bakery-1.0.0.tar.gz", hash = "sha256:850df636d16ee4b7e05e805bf7785f210c63ff6969d49b8596f0f19d8809ae2a", size = 9273, upload-time = "2022-07-26T17:54:40.532Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7d/aa/b4fc22b4253d59bf447b854db5669b0e21350fa87af9f85c6ad732cb6503/bakery-1.0.0-py3-none-any.whl", hash = "sha256:c2b3441b1bd7eccf8dd6fc2734f6262df670eddf41eacd15d971bcb8f4beecf2", size = 9324, upload-time = "2022-07-26T17:54:38.769Z" },
+]
+
+[[package]]
+name = "lead-exploration"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "bakery" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "bakery", specifier = ">=1.0.0" }]
